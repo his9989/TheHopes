@@ -8,6 +8,7 @@
 # 우리의 작은 룰
 ## 깃
 1. 깃은 push pull이 섞이지 않도록 조심
+2. 무조건 push pull은 sub branch만, master 브런치는 냅둬주세요.
 ## 코드
 1. align은 지키자 => 진짜 align 안 지키면 죽일꺼다
 2. 국룰은 지키라고 있는거다
