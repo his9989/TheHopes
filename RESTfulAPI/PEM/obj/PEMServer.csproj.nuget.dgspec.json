@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj": {}
+  },
+  "projects": {
+    "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj",
+        "projectName": "PEMServer",
+        "projectPath": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj",
+        "packagesPath": "/Users/lgj/.nuget/packages/",
+        "outputPath": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/lgj/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.60.6, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\PEM\PEM\bin\Release\netcoreapp2.1\PEM.deps.json
+C:\Users\user\source\repos\PEM\PEM\bin\Release\netcoreapp2.1\PEM.runtimeconfig.json
+C:\Users\user\source\repos\PEM\PEM\bin\Release\netcoreapp2.1\PEM.runtimeconfig.dev.json
+C:\Users\user\source\repos\PEM\PEM\bin\Release\netcoreapp2.1\PEM.dll
+C:\Users\user\source\repos\PEM\PEM\bin\Release\netcoreapp2.1\PEM.pdb
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.csprojAssemblyReference.cache
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.RazorAssemblyInfo.cache
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.RazorAssemblyInfo.cs
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.AssemblyInfo.cs
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.RazorTargetAssemblyInfo.cache
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.dll
+C:\Users\user\source\repos\PEM\PEM\obj\Release\netcoreapp2.1\PEM.pdb
