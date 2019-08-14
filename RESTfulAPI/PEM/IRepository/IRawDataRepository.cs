@@ -8,11 +8,10 @@ namespace PEMServer.IRepository
 {
     public interface IRawDataRepository
     {
-        List<RawData> GetRawDatas();
         List<RawData> GetRawDatas(string ObjName);
         List<RawData> GetRawDatas(string ObjName, string Time);
-        int GetRawDatasCount();
+        int GetRawDatasCount(string ObjName);
 
-        string InsertRawDatas(RawData rawData);     //경수형의 Insert
+        string InsertRawDatas(string ObjName, RawData rawData);     //경수형의 Insert
     }
 }

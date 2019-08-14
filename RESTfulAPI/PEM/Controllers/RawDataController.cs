@@ -27,9 +27,9 @@ namespace PEMServer.Controllers
 
         // GET: api/<controller>
         [HttpGet]
-        public IEnumerable<RawData> Get()
+        public string Get()
         {
-            return _repo.GetRawDatas();
+            return "wrong url";
         }
 
         // GET api/<controller>/bjh
@@ -46,17 +46,17 @@ namespace PEMServer.Controllers
             return _repo.GetRawDatas(ObjName, Time);
         }
 
-        [HttpGet("count")]
-        public int GetCount()
+        [HttpGet("{ObjName}/count")]
+        public int GetCount(string ObjName)
         {
-            return _repo.GetRawDatasCount();
+            return _repo.GetRawDatasCount(ObjName);
         }
 
         // POST api/<controller>
-        [HttpPost]
-        public string Post([FromBody]RawData rawData)       //경수형의 Insert
+        [HttpPost("{ObjName}")]
+        public string Post(string ObjName, [FromBody]RawData rawData)       //경수형의 Insert
         {
-            return _repo.InsertRawDatas(rawData);
+            return _repo.InsertRawDatas(ObjName, rawData);
         }
 
         // PUT api/<controller>/5

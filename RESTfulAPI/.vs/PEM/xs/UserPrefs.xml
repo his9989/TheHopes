@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{6BE258D6-1FA9-4D4F-9DBB-B2D6DBB9D37D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PEM/Controllers/RawDataController.cs">
+    <Files>
+      <File FileName="PEM/Models/User.cs" Line="1" Column="1" />
+      <File FileName="PEM/Models/RawData.cs" Line="17" Column="30" />
+      <File FileName="PEM/IRepository/IUserRepository.cs" Line="1" Column="1" />
+      <File FileName="PEM/IRepository/IRawDataRepository.cs" Line="15" Column="47" />
+      <File FileName="PEM/Repository/ClusteredDataRepository.cs" Line="85" Column="43" />
+      <File FileName="PEM/Repository/RawDataRepository.cs" Line="135" Column="44" />
+      <File FileName="PEM/Repository/UserRepositorycs.cs" Line="1" Column="1" />
+      <File FileName="PEM/Controllers/RawDataController.cs" Line="57" Column="44" />
+      <File FileName="PEM/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="PEM/Controllers/ClusteredDataController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PEM" expanded="True">
+            <Node name="PEMServer" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="RawDataController.cs" selected="True" />
+              </Node>
+              <Node name="IRepository" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PEMServer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

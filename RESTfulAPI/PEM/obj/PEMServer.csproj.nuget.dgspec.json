@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\PEM\\PEM\\PEMServer.csproj": {}
+    "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\PEM\\PEM\\PEMServer.csproj": {
+    "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\PEM\\PEM\\PEMServer.csproj",
+        "projectUniqueName": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj",
         "projectName": "PEMServer",
-        "projectPath": "C:\\Users\\user\\source\\repos\\PEM\\PEM\\PEMServer.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\PEM\\PEM\\obj\\",
+        "projectPath": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj",
+        "packagesPath": "/Users/lgj/.nuget/packages/",
+        "outputPath": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/lgj/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,6 +55,7 @@
               "version": "[2.2.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

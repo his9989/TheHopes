@@ -18,12 +18,15 @@ namespace PEMServer.Repository
         private readonly string success = "Success";
         private readonly string fail = "Fail";
         static private readonly string strconn = "Server = 223.194.70.34; Port=3307; Database = mysql; Uid = officium; Pwd = library@1989; CharSet=utf8";
-        MySqlConnection conn = new MySqlConnection(strconn);
+        private MySqlConnection conn = new MySqlConnection(strconn);
+        private string sql = "";
+        private MySqlCommand cmd;
 
 
         public ClusteredDataRepository(IConfiguration config)                                             // db 설정하는 메소드     
         {
             _config = config;
+            cmd = new MySqlCommand(sql, conn);
         }
 
         public List<ClusteredData> GetClusteredDatas()
@@ -32,8 +35,7 @@ namespace PEMServer.Repository
             try
             {
                 conn.Open();
-                string sql = "SELECT * FROM " + TableName;
-                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.CommandText = "SELECT * FROM " + TableName;
                 MySqlDataReader rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
@@ -58,14 +60,13 @@ namespace PEMServer.Repository
             try
             {
                 conn.Open();    //열어주기
-                string sql = "INSERT INTO " + TableName + " VALUES(@ObjName, @CluType, @CluIndex, @Latitude, @Longitude"; //<이걸로 하면 되지 않을까 사실 나도 안 해봄 걍 느낌>
-                MySqlCommand cmd = new MySqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@ObjName", clusteredData.ObjName); //아마 이렇게 parameter 넣으면 되지 않을까 싶음
-
-                //<파라미터 다 넣어줘>
-
-                //<실행시켜줘>
-
+                cmd.CommandText = "INSERT INTO " + TableName + " VALUES(@ObjName, @CluType, @CluIndex, @Latitude, @Longitude"; //<이걸로 하면 되지 않을까 사실 나도 안 해봄 걍 느낌>
+                cmd.Parameters.AddWithValue("@ObjName", clusteredData.ObjName);
+                cmd.Parameters.AddWithValue("@CluType", clusteredData.CluType);
+                cmd.Parameters.AddWithValue("@CluIndex", clusteredData.CluIndex);
+                cmd.Parameters.AddWithValue("@Latitude", clusteredData.Latitude);
+                cmd.Parameters.AddWithValue("@Longitude", clusteredData.Longitude);
+                _ = cmd.ExecuteNonQuery();
                 conn.Close();   //닫아주기
                 return success;
             }
@@ -80,11 +81,8 @@ namespace PEMServer.Repository
             try
             {
                 conn.Open();
-                string sql = ""; // <Delete 하는 sql인데 clusterData의 objName, cluType을 이용해 WHERE = 을 해서 지우는 sql>
-                MySqlCommand cmd = new MySqlCommand(sql, conn);
-                //<실행>
-
-
+                cmd.CommandText =  "DELETE FROM " + TableName + " WHERE ObjName = '" + clusteredData.ObjName + "' AND CluType = '" + clusteredData.CluType + "'"; // <Delete 하는 sql인데 clusterData의 objName, cluType을 이용해 WHERE = 을 해서 지우는 sql>
+                _ = cmd.ExecuteNonQuery();
                 conn.Close();
                 return success; //성공이라고 리턴
             }

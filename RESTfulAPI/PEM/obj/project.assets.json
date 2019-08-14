@@ -12504,30 +12504,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/lgj/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\PEM\\PEM\\PEMServer.csproj",
+      "projectUniqueName": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj",
       "projectName": "PEMServer",
-      "projectPath": "C:\\Users\\user\\source\\repos\\PEM\\PEM\\PEMServer.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\PEM\\PEM\\obj\\",
+      "projectPath": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/PEMServer.csproj",
+      "packagesPath": "/Users/lgj/.nuget/packages/",
+      "outputPath": "/Users/lgj/Projects/GpxParser/TheHopes/PEM/PEM/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/lgj/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12560,6 +12558,7 @@
             "version": "[2.2.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12582,7 +12581,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "종속성 제약 조건 밖의 패키지 버전이 검색되었습니다. Microsoft.AspNetCore.App 2.1.1에는 Microsoft.AspNetCore.Razor.Design (>= 2.1.1 && < 2.2.0)이(가) 필요하지만 버전 Microsoft.AspNetCore.Razor.Design 2.2.0이(가) 확인되었습니다.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.AspNetCore.App 2.1.1 requires Microsoft.AspNetCore.Razor.Design (>= 2.1.1 && < 2.2.0) but version Microsoft.AspNetCore.Razor.Design 2.2.0 was resolved.",
       "libraryId": "Microsoft.AspNetCore.Razor.Design",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
